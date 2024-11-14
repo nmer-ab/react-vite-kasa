@@ -1,0 +1,19 @@
+/***************************** MENU *****************************/
+
+.menu {
+  display: flex;
+  gap: 57px;
+  @include media-breakpoint($breakpoint-mobile) {
+    gap: 26px;
+  }
+  &__currentPage {
+    cursor: default;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: none;
+    @include media-breakpoint($breakpoint-mobile) {
+      text-underline-offset: 2px;
+    }
+  }
+}

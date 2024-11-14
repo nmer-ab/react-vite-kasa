@@ -1,0 +1,14 @@
+.rate {
+  display: inline-flex;
+  gap: 15px;
+  @include media-breakpoint($breakpoint-tablet) {
+    gap: 5px;
+  }
+  svg {
+    height: 25px;
+    width: auto;
+    @include media-breakpoint($breakpoint-tablet) {
+      height: 14px;
+    }
+  }
+}

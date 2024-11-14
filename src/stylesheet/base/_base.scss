@@ -1,0 +1,40 @@
+/***************************** BASES *****************************/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for main
+ */
+main {
+  @include flex-col;
+  gap: 43px;
+  margin: 50px 100px;
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+  }
+  @include media-breakpoint($breakpoint-laptop) {
+    margin: 27px 20px;
+  }
+  @include media-breakpoint($breakpoint-mobile) {
+    gap: 22px;
+  }
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}

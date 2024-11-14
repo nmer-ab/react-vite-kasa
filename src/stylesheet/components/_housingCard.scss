@@ -1,0 +1,42 @@
+/***************************** HOUSING CARD *****************************/
+.housing-card {
+  border-radius: $mediumRadius;
+  display: flex;
+  height: 340px;
+  position: relative;
+  overflow: hidden;
+  width: 340px;
+  @include media-breakpoint($breakpoint-laptopXL) {
+    height: 255px;
+    width: 335px;
+  }
+  @include media-breakpoint($breakpoint-mobileXS) {
+    width: 280px;
+  }
+  &__picture {
+    object-fit: cover;
+    opacity: 0.8;
+    position: absolute;
+    height: 340px;
+    width: 100%;
+  }
+  &__title {
+    bottom: 20px;
+    left: 20px;
+    max-width: 80%;
+    position: absolute;
+    z-index: 2;
+    &-container {
+      @include fullHeightWidth;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(10, 10, 10, 0) 42%,
+        rgba(4, 4, 4, 0.5) 99.9%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/***************************** HOUSINGS *****************************/
+.housings {
+  background-color: $grey;
+  border-radius: $largeRadius;
+  margin: auto;
+  &__cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+    padding: 56px 50px;
+    position: relative;
+    @include media-breakpoint($breakpoint-laptopXL) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media-breakpoint($breakpoint-laptop) {
+      background-color: white;
+      grid-gap: 20px;
+      padding: 0px;
+    }
+    @include media-breakpoint($breakpoint-tablet) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @include min-media-breakpoint($breakpoint-desktopXL) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

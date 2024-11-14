@@ -1,0 +1,161 @@
+/***************************** TYPOGRAPHY *****************************/
+/****************************************************** COLORS */
+body {
+  color: $text-color;
+}
+
+a {
+  color: $link-color;
+}
+
+.banner__title,
+.housing-card__title,
+.collapse__title,
+.tag,
+.slideshow__picture-index,
+.footer {
+  color: white;
+}
+
+.error-page__message,
+.housing-sheet__titles h1,
+.error-page__type,
+.host__name {
+  color: $brand-color;
+}
+
+/****************************************************** FONTS */
+body {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+}
+
+/***************************************** font weight */
+.housing-card__title,
+.banner__title,
+.tag {
+  font-weight: 700;
+}
+
+.highlightText,
+.error-page__message,
+.housing-sheet__titles h1,
+.host__name {
+  font-weight: 500;
+}
+
+.collapse__content {
+  font-weight: 400;
+}
+
+/***************************************** font size */
+.highlightText {
+  font-size: 1.5rem;
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 0.75rem;
+  }
+}
+
+.error-page__message,
+.housing-sheet__titles h1 {
+  font-size: 2.25rem;
+  @include media-breakpoint($breakpoint-laptop) {
+    font-size: 1.775rem;
+  }
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 1.125rem;
+  }
+}
+
+.collapse__content,
+.housing-card__title,
+.host__name,
+.slideshow__picture-index,
+.error-page__link,
+.housing-sheet .collapse__title,
+.housing-sheet__titles p {
+  font-size: 1.125rem;
+}
+
+.error-page__link,
+.housing-sheet__titles p {
+  @include media-breakpoint($breakpoint-laptop) {
+    font-size: 1rem;
+  }
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 0.875rem;
+  }
+}
+
+/* banner */
+.banner__title {
+  font-size: 3rem;
+  @include media-breakpoint($breakpoint-laptop) {
+    font-size: 2rem;
+  }
+  @include media-breakpoint($breakpoint-tablet) {
+    font-size: 1.5rem;
+  }
+}
+
+.collapse__title,
+.housing-sheet .collapse__title {
+  @include media-breakpoint($breakpoint-laptop) {
+    font-size: 1.125rem;
+  }
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 0.813rem;
+  }
+}
+
+/* collapse */
+.collapse__content,
+.host__name {
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 0.75rem;
+  }
+}
+
+/* tag */
+.tag {
+  font-size: 0.875rem;
+  @include media-breakpoint($breakpoint-tablet) {
+    font-size: 0.625rem;
+  }
+}
+
+/* error page */
+.error-page__type {
+  font-size: 18rem;
+  @include media-breakpoint($breakpoint-laptop) {
+    font-size: 10rem;
+  }
+  @include media-breakpoint($breakpoint-mobile) {
+    font-size: 6rem;
+  }
+}
+
+/***************************************** line height */
+.housing-card__title,
+.collapse__content,
+.tag,
+.host__name,
+.error-page__message,
+.housing-sheet__titles h1 {
+  line-height: 142%;
+}
+
+/***************************************** text transform */
+.menu a {
+  @include media-breakpoint($breakpoint-mobile) {
+    text-transform: uppercase;
+  }
+}
+
+/***************************************** text shadow */
+.banner__title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  @include media-breakpoint($breakpoint-tablet) {
+    text-shadow: none;
+  }
+}
