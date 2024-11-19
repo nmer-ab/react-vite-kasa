@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 
 /**
- * @component
- * @param {Object} props
- * @param {string} props.title
- * @param {string} props.page
- * @returns {JSX.Element}
+ *PropTypes: pour valider les types des propriétés title (chaîne optionnelle) et page (chaîne requise).
+ Le composant: retourne une balise <section> contenant un <h1> conditionnellement rendu si title est fourni,
+  et il est exporté pour être utilisé ailleurs.
+ 
  */
 const Banner = ({ title, page }) => {
   return (
