@@ -4,6 +4,11 @@ import AboutUs from './pages/AboutUs';
 import HousingSheet from './pages/HousingSheet';
 import ErrorPage from './pages/ErrorPage';
 
+/**
+ Chaque chemin (path) est associé à un composant spécifique,
+  avec une gestion des paramètres dynamiques (:housingId) et une route par défaut pour les erreurs 404.
+ */
+
 const Router = () => (
   <Routes>
     <Route index element={<Home />} />
