@@ -2,12 +2,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 /**
- * reusable page for different type of error,
- * Type and message can be managed into Router.
- * @param {Object} props
- * @param {string} props.description
- * @param {string[]} props.equipments
- * @returns {JSX.Element}
+ErrorPage affiche une page d’erreur avec un type d’erreur
+ (errorType) et un message descriptif (errorMessage).
+
  */
 const ErrorPage = ({ errorType, errorMessage }) => {
   return (
