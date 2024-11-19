@@ -2,12 +2,8 @@ import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 
 /**
- * @component
- * @param {Object} props
- * @param {string} props.title
- * @param {string} props.textContent
- * @param {string[]} props.listContent
- * @returns {JSX.Element}
+Je utilise des hooks React comme useState, useEffect et useRef pour gérer l'état d'ouverture,
+  la hauteur dynamique du contenu et les styles CSS conditionnels.
  */
 
 
