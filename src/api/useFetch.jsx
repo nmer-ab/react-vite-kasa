@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react';
 
+
+/*
+data : pour stocker les données récupérées.
+isLoading : pour indiquer si les données sont en cours de chargement (valeur initiale true).
+error : pour signaler s'il y a eu une erreur pendant la récupération.
+
+*/
 export function useFetch(url) {
   const [data, setData] = useState([]);
   const [isLoading, setLoading] = useState(true);
@@ -9,16 +16,15 @@ export function useFetch(url) {
     if (!url) return;
     const fetchData = async () => {
       try {
-        // use sessioStorage to avoid querying the database each time.
-        // This is possible here because the content is not "live".
+       
         if (window.sessionStorage.getItem(url) === null) {
-          // console.log('uncached datas');
+          
           const response = await fetch(url);
           const data = await response.json();
           setData(data);
           sessionStorage.setItem(url, JSON.stringify(data));
         } else {
-          // console.log('cached datas');
+         
           setData(JSON.parse(window.sessionStorage.getItem(url)));
         }
       } catch (err) {
